@@ -1,0 +1,38 @@
+{
+  "name": "Frühlingself",
+  "race": "Elf",
+
+  "attention": 11,
+  "charisma": 9,
+  "agility": 13,
+  "secrecy": 15,
+  "precision": 10,
+  "acumen": 10,
+  "strength": 5,
+  "willpower": 7,
+
+  "attention_modifier": -1,
+  "charisma_modifier": 1,
+  "agility_modifier": -3,
+  "secrecy_modifier": -5,
+  "precision_modifier": 0,
+  "acumen_modifier": 0,
+  "strength_modifier": 5,
+  "willpower_modifier": 3,
+
+  "defense": -3,
+  "armor" : 0,
+
+  "corruption": 0,
+
+  "weapons": [
+    {
+      "name": "Dolch",
+      "damage": 3
+    },
+    {
+      "name": "Bogen",
+      "damage": 4
+    }
+  ]
+}
