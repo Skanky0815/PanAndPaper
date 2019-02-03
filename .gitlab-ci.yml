@@ -1,0 +1,7 @@
+image: python
+
+unitTests:
+  script:
+    - python -v
+  tags:
+    - bash
