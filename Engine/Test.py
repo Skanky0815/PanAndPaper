@@ -19,7 +19,7 @@ class Test:
         dice_values: int = 0
         dice_text: str = ""
 
-        idx: str = 1
+        idx: int = 1
         for dice in dices:
             dice_value: int = dice.roll()
             if idx > 1:
@@ -52,4 +52,3 @@ class Result:
 
     def is_success(self) -> bool:
         return self.is_critical_success() or (self.dice_result <= self.__value)
-

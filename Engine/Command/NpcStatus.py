@@ -10,4 +10,3 @@ class NpcStatus(NpcCommand):
     def doing(self) -> bool:
         print(self.npc)
         return False
-

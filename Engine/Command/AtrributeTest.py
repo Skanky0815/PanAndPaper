@@ -14,4 +14,3 @@ class AttributeTest(BaseCommand):
     def doing(self) -> bool:
         result: Result = self.__test.attribute(Dice(20), self.__attribute_value, self.__modifier)
         return result.is_success()
-
