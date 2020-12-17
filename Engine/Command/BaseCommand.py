@@ -39,6 +39,6 @@ class BaseCommand:
 
 class NpcCommand(BaseCommand):
 
-    def __init__(self, text: str = "", do_text: str = "", npc: Npc = None):
+    def __init__(self, enemy: Npc, text: str = "", do_text: str = ""):
         super().__init__(text, do_text)
-        self.npc: Npc = npc
+        self.enemy: Npc = enemy

@@ -1,5 +1,5 @@
-from Engine.Character.Character import Player
 from Engine.Character.Npc import Npc
+from Engine.Character.Player import Player
 from Engine.Command.AtrributeTest import AttributeTest
 from Engine.Command.BaseCommand import BaseCommand
 from Engine.Command.Fight import Fight
@@ -38,10 +38,10 @@ class Factory:
 
     def __fight_command(self, npc: Npc) -> BaseCommand:
         return Fight(
-            character=self.__player,
+            player=self.__player,
             test=self.__test,
-            npc=npc
+            enemy=npc
         )
 
     def __npc_status(self, npc: Npc) -> BaseCommand:
-        return NpcStatus(npc=npc)
+        return NpcStatus(enemy=npc)

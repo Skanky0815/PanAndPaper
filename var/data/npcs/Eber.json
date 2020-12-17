@@ -1,34 +1,21 @@
 {
   "name": "Eber",
   "race": "Bestie",
-
-  "attention": 9,
-  "charisma": 5,
-  "agility": 13,
-  "secrecy": 7,
-  "precision": 10,
-  "acumen": 10,
-  "strength": 15,
-  "willpower": 11,
-
-  "attention_modifier": 1,
-  "charisma_modifier": 5,
-  "agility_modifier": -3,
-  "secrecy_modifier": 4,
-  "precision_modifier": 0,
-  "acumen_modifier": 0,
-  "strength_modifier": -5,
-  "willpower_modifier": 1,
-
-  "defense": 1,
-  "armor" : 7,
-
-  "corruption": 3,
-
-  "weapons": [
+  "health": 15,
+  "dodge": 5,
+  "armor": 0,
+  "actions": 1,
+  "behaviors": [
     {
-      "name": "Stoßzähne",
-      "damage": 10
+      "min": 1,
+      "max": 4,
+      "text": "Der Eber greift dich mit seinen Hauern direkt an",
+      "damage_dice": {"dice_count":  1, "dice_type": 6, "modifier": 4}
+    },
+    {
+      "min": 5,
+      "max": 20,
+      "text": "Flucht: Der Eber verschwindet in das Unterholz des Waldes."
     }
   ]
 }

@@ -4,7 +4,8 @@ import random
 from typing import List, Dict
 
 from Engine.Character.Npc import Factory as NpcFactory, Npc
-from Engine.Character.Character import Player
+from Engine.Character.Character import Character
+from Engine.Character.Player import Player
 from Engine.Command.BaseCommand import BaseCommand
 from Engine.Command.Factory import Factory as CommandFactory
 from Engine.ConColor import *

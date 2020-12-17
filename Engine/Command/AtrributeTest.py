@@ -1,6 +1,6 @@
 from Engine.Command.BaseCommand import BaseCommand
 from Engine.Dices import Dice
-from Engine.Test import Test, Result
+from Engine.Test import Test, TestResult
 
 
 class AttributeTest(BaseCommand):
@@ -12,5 +12,5 @@ class AttributeTest(BaseCommand):
         self.__attribute_value: int = attribute_value
 
     def doing(self) -> bool:
-        result: Result = self.__test.attribute(Dice(20), self.__attribute_value, self.__modifier)
+        result: TestResult = self.__test.attribute(Dice(20), self.__attribute_value, self.__modifier)
         return result.is_success()
